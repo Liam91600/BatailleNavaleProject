@@ -1,7 +1,5 @@
 <template>
-
-  <router-view/>
-  
+  <router-view />
 </template>
 
 <style>
@@ -24,5 +22,14 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+body {
+  color: black;
+  background-color: white;
+  background-image: url("@/assets/background2.png");
+  background-repeat: no-repeat;
+  font-family: "Dosis", sans-serif;
+  font-display: swap;
 }
 </style>

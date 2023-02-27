@@ -1,0 +1,7 @@
+2023-02-06 20:24:06,083 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-02-06 20:24:26,823 [Worker-18: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: fr.ensma.a3.ia:bataillenavale:1.0-SNAPSHOT @ C:\Users\liam_\Documents\workspaces\Bataille_Navale\bataillenavale\pom.xml.
+2023-02-06 20:24:26,949 [Worker-18: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2023-02-06 21:01:17,339 [Worker-21: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: fr.ensma.a3.ia:bataillenavale:1.0-SNAPSHOT @ C:\Users\liam_\Documents\workspaces\Bataille_Navale\bataillenavale\pom.xml.
+2023-02-06 21:01:37,202 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-02-06 21:01:37,266 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: fr.ensma.a3.ia:bataillenavale:1.0-SNAPSHOT @ C:\Users\liam_\Documents\workspaces\Bataille_Navale\bataillenavale\pom.xml.
+2023-02-06 21:01:37,303 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec

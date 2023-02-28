@@ -2,6 +2,8 @@
 
 <Titre msg="Bienvenue sur le jeu officiel de la Bataille Navale" />
 <Login/>
+<br/>
+<img src="@/assets/logonav.png" height="120" width="120"/>
 
 </template>
 

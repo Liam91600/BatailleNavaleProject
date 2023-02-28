@@ -3,6 +3,8 @@
 <Titre :msg="'Bienvenue, ' + nom"/>
 <NavigationBar/>
 
+
+
 </template>
 
 <script>

@@ -1,26 +1,24 @@
 <template>
-  <!-- <nav>
-    <h4>
+
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <span class="navbar-brand mb-0 h0">
+    <img src="@/assets/logonav.png" width="40" height="40" class="d-inline-block align-top" alt="logo navbar">
+    Bataille Navbar
+  </span>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
       <Navigation nom="home" label="Home" />
-      <span> - </span>
       <Navigation nom="lobby" label="Jouer" />
-      <span> - </span>
       <Navigation nom="login" label="Quitter" />
-    </h4>
-  </nav> -->
-
-  <nav class="navbar bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="@/assets/logonav.png" alt="logonav" width="30" height="24" />
-        <Navigation nom="home" label="Home" />
-        <Navigation nom="lobby" label="Jouer" />
-        <Navigation nom="login" label="Quitter" />
-      </a>
     </div>
+  </div>
   </nav>
-</template>
+</div>
 
+
+
+</template> 
 <script>
 import Navigation from "./Navigation.vue";
 
@@ -31,3 +29,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.container{
+
+ }
+</style>

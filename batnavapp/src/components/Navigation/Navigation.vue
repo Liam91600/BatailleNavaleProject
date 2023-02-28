@@ -1,6 +1,6 @@
 <template>
     
-    <router-link :to="{ name: nom}">{{ label }}</router-link>
+    <router-link class="nav-link" :to="{ name: nom}">{{ label }}</router-link>
 
 </template>
 

@@ -29,6 +29,7 @@ body {
   background-color: white;
   background-image: url("@/assets/background2.png");
   background-repeat: no-repeat;
+  background-size: 100%;
   font-family: "Dosis", sans-serif;
   font-display: swap;
 }

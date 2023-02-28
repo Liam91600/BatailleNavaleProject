@@ -4,6 +4,7 @@
 <NavigationBar/>
 
 
+<div class="points"></div>
 
 </template>
 
@@ -30,3 +31,15 @@ export default {
     },
 }
 </script>
+
+<style>
+.points{
+background: url('@/assets/bateau.png');
+height: 50px;
+width: 50px;
+}
+.points:hover {
+background: url('@/assets/explosion.png');
+}
+
+</style>

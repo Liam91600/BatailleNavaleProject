@@ -1,6 +1,6 @@
 <template>
   <div class="titre">
-    <h1>{{ msg }}</h1>
+    <p>{{ msg }}</p>
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
 <style>
 .titre {
   margin: 13vh auto;
-  font-size: 60px;
+  font-size: 50px;
   text-shadow: 0 0 2px #00fffc, 0 0 30px #00fffc, 0px 0px 5px #00fffc,
     0 0 150px #00fffc;
   color: #00fffc;

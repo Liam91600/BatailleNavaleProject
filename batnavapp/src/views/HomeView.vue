@@ -58,25 +58,21 @@ export default {
 <style scoped>
 
 ul{
-  text-shadow: 0 0 2px #00fffc, 0 0 30px #00fffc, 0px 0px 5px #00fffc,
-    0 0 150px #00fffc;
-  color: white;
-  margin: 50px 300px;
+  /*  text-shadow: 0 0 2px #00fffc, 0 0 30px #00fffc; */
+  color: whitesmoke; 
+  margin: -50px 200px;
 }
 
 li {	
 list-style-image: url('@/assets/bateau_petit.png');
-
-margin: auto;
 }
 li:hover {
 list-style-image: url('@/assets/explosion_petit.png');
-
-margin: auto;
 }
 
 .rules{
   font-size: 18px;
+
 }
 
 </style>

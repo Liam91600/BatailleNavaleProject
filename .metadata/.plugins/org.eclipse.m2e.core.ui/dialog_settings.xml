@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
-			<item value="/home/ayachel/Documents/BatailleNavaleProject/bataillenavale"/>
 			<item value="C:\Users\liam_\Documents\workspaces\Bataille_Navale\bataillenavale"/>
+			<item value="/home/ayachel/Documents/BatailleNavaleProject/bataillenavale"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

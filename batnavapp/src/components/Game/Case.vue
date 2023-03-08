@@ -16,7 +16,7 @@ const url_ship = "texture_ship.jpg";
 export default {
   name: "CaseComponent",
   props: {
-    id: String,
+    id: Number,
     image: String,
   },
 
@@ -37,10 +37,10 @@ export default {
       this.$emit("clickCase", this.id);
     },
     prev() {
-      this.$emit("previsualisation", this.id, "in");
+      this.$emit("previsualisation", this.id, "ship");
     },
     unprev() {
-      this.$emit("previsualisation", this.id, "out");
+      this.$emit("previsualisation", this.id, "sea");
     },
   },
 };

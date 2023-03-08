@@ -39,7 +39,7 @@ export default {
 
 .imgcard {
   display: flex;
-  width: 144px;
+  width: 288px;
   height: 144px;
 }
 </style>

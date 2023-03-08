@@ -6,4 +6,13 @@
   </div>
 </template>
 
-<script></script>
+<script>
+
+export default{
+  methods:{
+    placement(){
+      console.log("placement bateau")
+      this.$emit("click_prev")
+    }
+  }
+}</script>

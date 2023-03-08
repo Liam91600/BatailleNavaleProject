@@ -1,12 +1,12 @@
 <template>
   <div>
     <table class="plateau">
-      <tr v-for="(row, i) in plateau.case" :key="i">
-        <th v-for="(item, j) in row" :key="j">
+      <tr v-for="i in 10" :key="i">
+        <th v-for="j in 10" :key="j">
           <CaseComponent
             class="case"
-            :id="item.id"
-            :image="item.image"
+            :id="plateau.cases[(i-1)*10 + j-1].id"
+            :image="plateau.cases[(i-1)*10 + j-1].image"
             @clickCase="traiteClick"
             @previsualisation="previsualiserBateau"
           />
@@ -23,45 +23,40 @@ export default {
   components: {
     CaseComponent,
   },
+  props:{
+   prev: Boolean
+  },
+
   data() {
     return {
       plateau: {
-        case: [],
+        cases: []
       },
     };
   },
 
   created() {
-    for (let i = 0; i < 10; i++) {
-      this.plateau.case[i] = [];
-      for (let j = 0; j < 10; j++) {
-        this.plateau.case[i][j] = {
-          id: (10 * i + j + 1).toString(),
-          image: "",
-          state: 0,
-        };
-      }
+    for (let i = 0; i < 100; i++){
+      this.plateau.cases[i] = {id: i, image: "", state:0}
     }
   },
   methods: {
+
+    
     traiteClick(idCase) {
-      console.log(idCase);
+      console.log(this.plateau.cases[idCase].id);
     },
+
     previsualiserBateau(idCase, state) {
-      console.log("prévi", idCase);
-      this.plateau.case.forEach((row) => {
-        row.forEach((cse) => {
-          if (idCase == cse.id || cse.id == parseInt(idCase) + 1) {
-            if (state == "in") {
-              cse.image = "ship";
-            }
-            if (state == "out") {
-              cse.image = "sea";
-            }
-          }
-        });
-      });
-    },
+      console.log("prévi", idCase, this.prev);
+      if (this.prev == true){
+        for (let i = idCase; i<idCase +3; i++) {
+        this.plateau.cases[i].image = state
+        }
+      }
+    }, 
+
+
   },
 };
 </script>

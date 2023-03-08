@@ -2,9 +2,11 @@
   <NavigationBar />
 
   <div class="placementbateau">
-    <PlacementBateau :prev="this.prev"/>
+    <PlacementBateau @click="click_prev(5)"/>
+    <PlacementBateau @click="click_prev(4)"/>
+    <PlacementBateau @click="click_prev(3)"/>
   </div>
-  <Grille />
+  <Grille :prev="prev" :taille="taille" @click="place"/>
 </template>
 
 <script>
@@ -22,25 +24,29 @@ export default {
   data() {
     return {
       prev:false,
+      taille:0,
     }
   },
 
-  created(){
+  methods: {
 
-    const source = new EventSource("@/components/Game/PlacementBateau.vue");
-    source.addEventListener(
-      "click_prev",
-      function(){
-        console.log("bien transmis")
-        this.prev = true
-        // if (this.prev==true){this.prev=false}
-      }
-    )
+    click_prev(t){
+      this.prev = true
+      this.taille= t
+      console.log(this.prev, this.taille)
+
+    },
+
+    place(){
+      if (this.prev==true){this.prev=false; this.taille=0}
+    }
+    
   },
 };
 </script>
 <style>
 .placementbateau {
+  display: flex;
   margin: 100px 100px;
 }
 </style>

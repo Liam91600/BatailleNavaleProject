@@ -25,7 +25,31 @@ export default {
     return {
       prev:false,
       taille:0,
+
+      bateau: {
+        taille: 0
+      }
     }
+  },
+
+  mounted() {
+    console.log("Appel service Rest");
+    const APP_SERVER_URL = "http://127.0.0.1:8080/rest";
+
+    let request = new Request(APP_SERVER_URL + "/bateau/" + "all", {
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+    });
+    fetch(request)
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+      })
+      .then((data) => {
+        console.log(data);
+        this.leschat = data;
+      });
   },
 
   methods: {

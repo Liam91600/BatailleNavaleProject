@@ -1,12 +1,10 @@
 <template>
   <NavigationBar />
 
-  <div class="placementbateau">
-    <PlacementBateau @click="click_prev(5)"/>
-    <PlacementBateau @click="click_prev(4)"/>
-    <PlacementBateau @click="click_prev(3)"/>
+  <div class="placementbateau" >
+    <PlacementBateau @click_prev="click_prev"/>
   </div>
-  <Grille :prev="prev" :taille="taille" @click="place"/>
+  <Grille :prev="prev" :taille="taille_prev" @click="place"/>
 </template>
 
 <script>
@@ -24,39 +22,18 @@ export default {
   data() {
     return {
       prev:false,
-      taille:0,
+      taille_prev:0,
 
-      bateau: {
-        taille: 0
-      }
     }
   },
 
-  mounted() {
-    console.log("Appel service Rest");
-    const APP_SERVER_URL = "http://127.0.0.1:8080/rest";
-
-    let request = new Request(APP_SERVER_URL + "/bateau/" + "all", {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    });
-    fetch(request)
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        }
-      })
-      .then((data) => {
-        console.log(data);
-        this.leschat = data;
-      });
-  },
+  
 
   methods: {
 
-    click_prev(t){
+    click_prev(taille){
       this.prev = true
-      this.taille= t
+      this.taille_prev= taille
       console.log(this.prev, this.taille)
 
     },

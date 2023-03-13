@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import fr.ensma.a3.ia.bataillenavale.business.elements.bateaux.AbstractBateau;
+import fr.ensma.a3.ia.bataillenavale.business.elements.bateaux.ContreTorpilleur;
 import fr.ensma.a3.ia.bataillenavale.business.elements.bateaux.Croiseur;
-import fr.ensma.a3.ia.bataillenavale.business.elements.bateaux.PorteAvion;
+import fr.ensma.a3.ia.bataillenavale.business.elements.bateaux.PorteAvions;
+import fr.ensma.a3.ia.bataillenavale.business.elements.bateaux.SousMarin;
+import fr.ensma.a3.ia.bataillenavale.business.elements.bateaux.Torpilleur;
 
 public class JeuBatailleNavale {
 	
@@ -14,9 +17,11 @@ public class JeuBatailleNavale {
 	public JeuBatailleNavale() {
 		listeBateaux = new ArrayList<>();
 		
-		listeBateaux.add(new PorteAvion());
+		listeBateaux.add(new PorteAvions());
 		listeBateaux.add(new Croiseur());
-		listeBateaux.add(new Croiseur());
+		listeBateaux.add(new ContreTorpilleur());
+		listeBateaux.add(new Torpilleur());
+		listeBateaux.add(new SousMarin());
 	}
 	
 	

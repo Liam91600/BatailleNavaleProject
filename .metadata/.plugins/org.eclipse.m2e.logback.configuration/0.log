@@ -813,3 +813,128 @@ java.io.InvalidClassException: org.eclipse.m2e.core.embedder.ArtifactKey; local 
 2023-03-09 14:37:14,129 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/service/src/main/resources
 2023-03-09 14:37:14,130 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-03-09 14:37:14,130 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/service/src/test/resources
+2023-03-13 08:34:11,053 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-13 08:34:42,273 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-13 08:34:42,672 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.ensma.a3.ia.bataillenavale.business:business:1.0-SNAPSHOT @ /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/pom.xml.
+2023-03-13 08:34:42,689 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.ensma.a3.ia.bataillenavale.service:service:1.0-SNAPSHOT @ /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/service/pom.xml.
+2023-03-13 08:34:42,867 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/business: fr.ensma.a3.ia.bataillenavale.business:business:1.0-SNAPSHOT with classifier  to /business/target/classes
+2023-03-13 08:34:42,871 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: fr.ensma.a3.ia.bataillenavale:bataillenavale:1.0-SNAPSHOT @ /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/pom.xml.
+2023-03-13 08:34:42,881 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.ensma.a3.ia.bataillenavale.dal:dal:1.0-SNAPSHOT @ /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/dal/pom.xml.
+2023-03-13 08:34:43,106 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /business/src/main/java
+2023-03-13 08:34:43,107 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /business/src/test/java
+2023-03-13 08:34:43,123 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dal/src/main/java
+2023-03-13 08:34:43,123 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dal/src/test/java
+2023-03-13 08:34:43,135 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /service/src/main/java
+2023-03-13 08:34:43,135 [Worker-13: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /service/src/test/java
+2023-03-13 08:34:43,341 [Worker-13: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2023-03-13 08:34:43,611 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:34:43,611 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:34:43,613 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:34:43,613 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:34:43,639 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:34:43,639 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/dal/src/main/resources
+2023-03-13 08:34:43,640 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:34:43,640 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/dal/src/test/resources
+2023-03-13 08:34:43,895 [Worker-12: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/business: fr.ensma.a3.ia.bataillenavale.business:business:1.0-SNAPSHOT with classifier  to /business/target/classes
+2023-03-13 08:34:43,900 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:34:43,900 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/service/src/main/resources
+2023-03-13 08:34:43,902 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:34:43,902 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/service/src/test/resources
+2023-03-13 08:52:09,748 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:52:09,748 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:52:09,749 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:52:09,749 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:52:51,761 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:52:51,761 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:52:51,762 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:52:51,762 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:53:03,911 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:53:03,912 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:53:03,912 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:53:03,913 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:53:15,252 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:53:15,252 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:53:15,253 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:53:15,253 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:53:18,766 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:53:18,766 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:53:18,767 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:53:18,767 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:53:31,138 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:53:31,138 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:53:31,139 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:53:31,139 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:53:33,574 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:53:33,575 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:53:33,575 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:53:33,575 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:53:45,105 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:53:45,105 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:53:45,106 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:53:45,106 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:57:11,890 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:57:11,890 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:57:11,891 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:57:11,891 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:57:14,442 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:57:14,442 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:57:14,444 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:57:14,444 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:57:24,074 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:57:24,074 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:57:24,075 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:57:24,075 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:57:59,848 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:57:59,848 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:57:59,849 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:57:59,849 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:58:22,434 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:58:22,434 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:58:22,436 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:58:22,436 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:58:55,552 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:58:55,552 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:58:55,554 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:58:55,554 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:59:09,069 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:59:09,069 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:59:09,070 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:59:09,071 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:59:28,321 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:59:28,321 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:59:28,322 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:59:28,322 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 08:59:45,915 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:59:45,915 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 08:59:45,917 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 08:59:45,917 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 09:00:01,664 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-03-13 09:00:01,777 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.ensma.a3.ia.bataillenavale.business:business:1.0-SNAPSHOT @ /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/pom.xml.
+2023-03-13 09:00:01,785 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.ensma.a3.ia.bataillenavale.service:service:1.0-SNAPSHOT @ /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/service/pom.xml.
+2023-03-13 09:00:01,886 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/business: fr.ensma.a3.ia.bataillenavale.business:business:1.0-SNAPSHOT with classifier  to /business/target/classes
+2023-03-13 09:00:01,888 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: fr.ensma.a3.ia.bataillenavale:bataillenavale:1.0-SNAPSHOT @ /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/pom.xml.
+2023-03-13 09:00:01,895 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fr.ensma.a3.ia.bataillenavale.dal:dal:1.0-SNAPSHOT @ /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/dal/pom.xml.
+2023-03-13 09:00:02,012 [Worker-35: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /business/src/main/java
+2023-03-13 09:00:02,012 [Worker-35: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /business/src/test/java
+2023-03-13 09:00:02,019 [Worker-35: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dal/src/main/java
+2023-03-13 09:00:02,019 [Worker-35: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /dal/src/test/java
+2023-03-13 09:00:02,025 [Worker-35: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /service/src/main/java
+2023-03-13 09:00:02,025 [Worker-35: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /service/src/test/java
+2023-03-13 09:00:02,084 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2023-03-13 09:00:02,228 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 09:00:02,228 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 09:00:02,229 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 09:00:02,229 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources
+2023-03-13 09:00:02,246 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 09:00:02,246 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/dal/src/main/resources
+2023-03-13 09:00:02,247 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 09:00:02,247 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/dal/src/test/resources
+2023-03-13 09:00:02,349 [Worker-35: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/business: fr.ensma.a3.ia.bataillenavale.business:business:1.0-SNAPSHOT with classifier  to /business/target/classes
+2023-03-13 09:00:02,351 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 09:00:02,351 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/service/src/main/resources
+2023-03-13 09:00:02,351 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 09:00:02,351 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/service/src/test/resources
+2023-03-13 09:49:45,293 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 09:49:45,293 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/main/resources
+2023-03-13 09:49:45,293 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-13 09:49:45,293 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/ayachel/Documents/BatailleNavaleProject/bataillenavale/business/src/test/resources

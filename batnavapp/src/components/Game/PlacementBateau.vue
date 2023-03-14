@@ -1,24 +1,25 @@
 <template>
   <div class="bateaux">
-    <button v-for="bat in this.bateau" :key="bat" @click="click_prev(bat.taille)">
+    <button
+      v-for="bat in this.bateau"
+      :key="bat"
+      @click="click_prev(bat.taille, bat.nom)"
+    >
       <img src="@/assets/bateau_petit.png" alt="bateau" />
       {{ bat.nom }} ({{ bat.taille }})
     </button>
-    
   </div>
 </template>
 
 <script>
-
-export default{
-
-  data(){
+export default {
+  data() {
     return {
       bateau: {
         taille: 0,
-        nom : ""
-      }
-    }
+        nom: "",
+      },
+    };
   },
 
   mounted() {
@@ -41,11 +42,10 @@ export default{
       });
   },
 
-  methods:{
-    click_prev(taille){
-      this.$emit("click_prev", taille)
-    }
-
-  }
-}
+  methods: {
+    click_prev(taille, nom) {
+      this.$emit("click_prev", taille, nom);
+    },
+  },
+};
 </script>

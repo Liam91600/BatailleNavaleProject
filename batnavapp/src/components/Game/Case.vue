@@ -13,20 +13,22 @@
 <script>
 const url_sea = "texture_sea.jpg";
 const url_ship = "texture_ship.jpg";
+const url_prev = "texture_sea_prev.jpg";
+
 export default {
   name: "CaseComponent",
   props: {
     id: Number,
-    image: String,
+    type: String,
+    is_prev: Boolean,
   },
 
   computed: {
     imageurl: function () {
-      if (this.image == "sea") {
-        return url_sea;
-      }
-      if (this.image == "ship") {
+      if (this.type != "") {
         return url_ship;
+      } else if (this.is_prev == true) {
+        return url_prev;
       }
       return url_sea;
     },
@@ -37,10 +39,10 @@ export default {
       this.$emit("clickCase", this.id);
     },
     prev() {
-      this.$emit("previsualisation", this.id, "ship");
+      this.$emit("prev", this.id, true);
     },
     unprev() {
-      this.$emit("previsualisation", this.id, "sea");
+      this.$emit("prev", this.id, false);
     },
   },
 };

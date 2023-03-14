@@ -5,10 +5,11 @@
         <th v-for="j in 10" :key="j">
           <CaseComponent
             class="case"
-            :id="plateau.cases[(i-1)*10 + j-1].id"
-            :image="plateau.cases[(i-1)*10 + j-1].image"
+            :id="plateau.cases[(i - 1) * 10 + j - 1].id"
+            :type="plateau.cases[(i - 1) * 10 + j - 1].type"
+            :is_prev="plateau.cases[(i - 1) * 10 + j - 1].is_prev"
             @clickCase="traiteClick"
-            @previsualisation="previsualiserBateau"
+            @prev="prev"
           />
         </th>
       </tr>
@@ -27,40 +28,44 @@ export default {
   data() {
     return {
       plateau: {
-        cases: []
+        cases: [],
       },
     };
   },
 
-  props:{
-    prev: Boolean,
-    taille: Number
+  props: {
+    nom_prev: String,
+    taille_prev: Number,
   },
 
   created() {
-    for (let i = 0; i < 100; i++){
-      this.plateau.cases[i] = {id: i, image: "", place:0}
+    for (let i = 0; i < 100; i++) {
+      this.plateau.cases[i] = { id: i, type: "", is_prev: false };
     }
   },
   methods: {
-
-    
     traiteClick(idCase) {
-      console.log(this.plateau.cases[idCase].id);
+      console.log(
+        "click",
+        this.plateau.cases[idCase].id,
+        this.plateau.cases[idCase].type
+      );
+      if (this.plateau.cases[idCase].is_prev == true) {
+        for (let i = idCase; i < idCase + this.taille_prev; i++) {
+          this.plateau.cases[i].type = this.nom_prev;
+        }
+        this.$emit("click_unprev", 0, "");
+      }
     },
 
-    previsualiserBateau(idCase, img) {
-      console.log("prévi", idCase, this.prev);
-      if (this.prev == true){
-        for (let i = idCase; i<idCase + this.taille; i++) {
-
-          this.plateau.cases[i].image = img
-          
+    prev(idCase, mouse) {
+      console.log("prev", idCase, this.nom_prev);
+      if (this.nom_prev != "" && this.plateau.cases[idCase].type == "") {
+        for (let i = idCase; i < idCase + this.taille_prev; i++) {
+          this.plateau.cases[i].is_prev = mouse;
         }
       }
-    }, 
-
-
+    },
   },
 };
 </script>

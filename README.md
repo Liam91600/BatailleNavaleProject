@@ -5,7 +5,7 @@ Pour lancer le serveur : se placer dans le dossier "bataillenavale" puis execute
 - sudo docker compose build
 - sudo docker compose up
 
-pour lancer le serveur npm (le site web) : se placer dans le dosier batnav puis executer 
+pour lancer le serveur npm (le site web) : se placer dans le dosier batnavapp puis executer 
 - npm run serve
 
 

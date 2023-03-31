@@ -3,6 +3,7 @@
 
   <div class="placementbateau">
     <PlacementBateau />
+    Click droit pour changer d'orientation
   </div>
   <Grille />
 </template>

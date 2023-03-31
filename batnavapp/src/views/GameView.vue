@@ -2,13 +2,9 @@
   <NavigationBar />
 
   <div class="placementbateau">
-    <PlacementBateau @click_prev="click_prev" />
+    <PlacementBateau />
   </div>
-  <Grille
-    :nom_prev="nom_prev"
-    :taille_prev="taille_prev"
-    @click_unprev="click_prev"
-  />
+  <Grille />
 </template>
 
 <script>
@@ -22,20 +18,6 @@ export default {
     NavigationBar,
     Grille,
     PlacementBateau,
-  },
-  data() {
-    return {
-      nom_prev: "",
-      taille_prev: 0,
-    };
-  },
-
-  methods: {
-    click_prev(taille, nom) {
-      this.nom_prev = nom;
-      this.taille_prev = taille;
-      console.log(this.nom_prev, this.taille_prev);
-    },
   },
 };
 </script>

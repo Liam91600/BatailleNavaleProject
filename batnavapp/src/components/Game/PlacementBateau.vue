@@ -6,7 +6,7 @@
       @click="click_prev(bat.taille, bat.nom)"
     >
       <img src="@/assets/bateau_petit.png" alt="bateau" />
-      {{ bat.nom }} ({{ bat.taille }})
+      {{ bat.nom }} (taille:{{ bat.taille }})
     </button>
   </div>
 </template>
@@ -44,7 +44,10 @@ export default {
 
   methods: {
     click_prev(taille, nom) {
-      this.$emit("click_prev", taille, nom);
+      this.$store.commit("setIsPrev", true);
+      this.$store.commit("setTaillePrev", taille);
+      this.$store.commit("setNomPrev", nom);
+      console.log(this.$store.getters.getNomPrev);
     },
   },
 };

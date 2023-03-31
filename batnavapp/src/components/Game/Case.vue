@@ -2,6 +2,7 @@
   <img
     :src="require('@/assets/' + imageurl)"
     @click="clickMe"
+    @contextmenu.prevent="rightClick"
     @mouseover="prev"
     @mouseout="unprev"
     alt="Case de jeu"
@@ -43,6 +44,14 @@ export default {
     },
     unprev() {
       this.$emit("prev", this.id, false);
+    },
+    rightClick() {
+      this.$emit("prev", this.id, false);
+      if (this.$store.getters.getOrientation == "Horizontal") {
+        this.$store.commit("setOrientation", "Vertical");
+      } else {
+        this.$store.commit("setOrientation", "Horizontal");
+      }
     },
   },
 };

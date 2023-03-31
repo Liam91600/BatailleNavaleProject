@@ -33,11 +33,6 @@ export default {
     };
   },
 
-  props: {
-    nom_prev: String,
-    taille_prev: Number,
-  },
-
   created() {
     for (let i = 0; i < 100; i++) {
       this.plateau.cases[i] = { id: i, type: "", is_prev: false };
@@ -51,20 +46,81 @@ export default {
         this.plateau.cases[idCase].type
       );
       if (this.plateau.cases[idCase].is_prev == true) {
-        for (let i = idCase; i < idCase + this.taille_prev; i++) {
-          this.plateau.cases[i].type = this.nom_prev;
+        if (this.$store.getters.getOrientation == "Horizontal") {
+          for (
+            let i = idCase;
+            i < idCase + this.$store.getters.getTaillePrev;
+            i++
+          ) {
+            this.plateau.cases[i].type = this.$store.getters.getNomPrev;
+          }
+        } else if (this.$store.getters.getOrientation == "Vertical") {
+          for (
+            let i = idCase;
+            i < idCase + 10 * this.$store.getters.getTaillePrev;
+            i = i + 10
+          ) {
+            this.plateau.cases[i].type = this.$store.getters.getNomPrev;
+          }
         }
-        this.$emit("click_unprev", 0, "");
+
+        this.$store.commit("setIsPrev", false);
+        this.$store.commit("setTaillePrev", 0);
+        this.$store.commit("setNomPrev", "");
       }
     },
 
     prev(idCase, mouse) {
-      console.log("prev", idCase, this.nom_prev);
-      if (this.nom_prev != "" && this.plateau.cases[idCase].type == "") {
-        for (let i = idCase; i < idCase + this.taille_prev; i++) {
-          this.plateau.cases[i].is_prev = mouse;
+      console.log("prev", idCase);
+      if (this.$store.getters.getIsPrev == true) {
+        if (
+          this.$store.getters.getOrientation == "Horizontal" &&
+          this.check_prev_horizontal(
+            idCase,
+            this.$store.getters.getTaillePrev
+          ) &&
+          Math.floor((idCase + this.$store.getters.getTaillePrev - 1) / 10) ==
+            Math.floor(idCase / 10)
+        ) {
+          for (
+            let i = idCase;
+            i < idCase + this.$store.getters.getTaillePrev;
+            i++
+          ) {
+            this.plateau.cases[i].is_prev = mouse;
+          }
+        } else if (
+          this.$store.getters.getOrientation == "Vertical" &&
+          this.check_prev_vertical(idCase, this.$store.getters.getTaillePrev) &&
+          Math.floor(idCase / 10) + this.$store.getters.getTaillePrev <= 10
+        ) {
+          for (
+            let i = idCase;
+            i < idCase + 10 * this.$store.getters.getTaillePrev;
+            i = i + 10
+          ) {
+            this.plateau.cases[i].is_prev = mouse;
+          }
         }
       }
+    },
+
+    //vérifie si les n cases suivantes à celle survollée sont déja occupées par un bateau ou pas (check le type des cases)
+    check_prev_horizontal(id, taille) {
+      for (let i = id; i < id + taille; i++) {
+        if (this.plateau.cases[i].type != "") {
+          return false;
+        }
+      }
+      return true;
+    },
+    check_prev_vertical(id, taille) {
+      for (let i = id; i < id + 10 * taille; i = i + 10) {
+        if (this.plateau.cases[i].type != "") {
+          return false;
+        }
+      }
+      return true;
     },
   },
 };
